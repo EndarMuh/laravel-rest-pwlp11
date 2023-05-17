@@ -17,7 +17,11 @@ class MahasiswaResource extends JsonResource
         return [
             'nim'=>$this->Nim,
             'nama'=>$this->Nama,
-            'jurusan'=> strtoupper($this->Jurusan)
+            'tanggal_lahir'=>$this->Tanggal_Lahir,
+            'jurusan'=> strtoupper($this->Jurusan),
+            'no_handphone'=>$this->No_Handphone,
+            'email'=>$this->Email,
+            'kelas_id'=>$this->kelas_id,
         ];
     }
 }
